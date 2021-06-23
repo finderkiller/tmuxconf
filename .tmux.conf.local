@@ -292,9 +292,16 @@ bind C-a send-prefix
 
 # move status line to top
 #set -g status-position top
+
 # start windows numbering at 0
 set -g base-index 0
 
 # other ^A
 unbind ^A
 bind ^A last-window
+
+# do not renumber windows when a window is closed
+# set -g renumber-windows off
+
+# set -g @resurrect-save 'S'
+# set -g @resurrect-restore 'R'
